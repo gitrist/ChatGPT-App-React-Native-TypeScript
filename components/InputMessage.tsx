@@ -23,7 +23,7 @@ const InputMessage = () => {
 			text: text.trim(),
 			user: {
 				name: 'you',
-				avatar: 'https://i.pravatar.cc/100?u=A08',
+				avatar: '../assets/1686543204186.jpg',
 			},
 			usage: {
 				prompt_tokens: 0,
@@ -31,6 +31,7 @@ const InputMessage = () => {
 				total_tokens: 0,
 			},
 		});
+		console.log(uuid(), 'uuid')
 		setText('');
 	};
 

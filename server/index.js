@@ -12,7 +12,7 @@ const openai = new OpenAIApi(configuration);
 
 const app = express();
 const port = 3000;
-console.log(environment, 'config')
+
 app.use(cors());
 app.use(express.json());
 
@@ -25,7 +25,7 @@ const idRandonAvatar = Math.floor(Math.random() * 100);
 app.post('/api/chat', async (req, res) => {
 	const { message, model, max_tokens, temperature } = req.body;
 
-	console.log('\n\nInput: ', req.body);
+	console.log('\n\nInput: ', message);
 
 	if ( message === '' ) {
 		console.log('No message provided');
@@ -59,7 +59,7 @@ app.post('/api/chat', async (req, res) => {
 			data: data,
 		});
 
-		console.log('\n\nOutput: ', response.data);
+		console.log('\n\nOutput: ', response.data.text);
 	
 	}
 	

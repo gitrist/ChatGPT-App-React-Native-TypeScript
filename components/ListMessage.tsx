@@ -32,11 +32,8 @@ const ListMessage = () => {
 			setMessages((messages) => [...messages, data]);
 		}
 
-	}, [data, data.text]);
+	}, [data, data.text, textInput]);
 	
-	console.log('messagesDown', messages.length);
-	console.log('isLoading', isLoading);
-
 	return (
 		<View>
 			<FlatList

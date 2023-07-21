@@ -18,7 +18,7 @@ const Message = ({ message }: MessageProps) => {
 	return (
 		<View style={ message.user.name === 'you' ? styles.messageyou : styles.messagechatgpt }>
 			<View style={styles.profile}>
-				<Image style={styles.Image} source={{ uri: message.user.avatar }} />
+				<Image style={styles.Image} source={require('../assets/1686543204186.jpg')} />
 				<Text style={styles.author}>{message.user.name}</Text>
 			</View>
 			<TouchableOpacity onPress={() => copyToClipboard()}>
