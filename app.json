@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Games",
-    "slug": "Games",
+    "slug": "games",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -24,10 +24,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.wei.liang.games"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7a6fbd19-728f-4bfc-89ec-440f1afb2c7a"
+      }
+    },
+    "owner": "wei.liang"
   }
 }
